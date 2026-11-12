@@ -1,0 +1,21 @@
+# The background-removal model is 178 MB. download_model.py fetches it.
+models/*.onnx
+models/*.part
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# PyInstaller output
+build/
+dist/
+
+# Local files
+*.dll
+test_app.py
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
