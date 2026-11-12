@@ -49,6 +49,24 @@ If the model download is blocked on your network, download
 [isnet-general-use.onnx](https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx)
 in a browser and save it as `models\isnet-general-use.onnx`.
 
+## How to use it
+
+1. **Open photos.** On the start screen choose photos or a whole folder (with or without its subfolders),
+   or drop them onto the window. The **+** button at the top of the photo strip adds more later.
+2. **Cut out.** The background is removed on its own. If an edge is not right, press **Refine edges**:
+   *Erase* paints parts away, *Restore* brings them back, the mouse wheel zooms. Press **Done** to keep it.
+3. **Scene.** Pick a backdrop, a shadow and a size. On the picture, drag the product to move it
+   and drag a corner to resize it. The rainbow tile makes a new color or gradient; the picture tile adds your own backdrop image.
+4. **Brand.** Fill in your brand kit once (name, tagline, handle, logo), pick a watermark style,
+   then choose where it goes: one corner, the center, or tiled across the photo.
+5. **Apply to all.** Each photo keeps its own look. To give the look of the current photo to the others,
+   select them in the strip (Ctrl+click, or Ctrl+A for all) and press **Apply to all**. You can pause, resume or stop.
+6. **Export.** Press **Export**, choose *This photo* or all of them, PNG or JPEG,
+   and whether the files go next to each original or into one folder.
+
+Handy keys: **Ctrl+Z** undo, **Ctrl+Y** redo, **Ctrl+A** select all photos, **Delete** remove the selected photos.
+Hold **Compare** to see the original photo.
+
 ## Build a standalone .exe
 
 Run `run.cmd` once, then double-click **`build.cmd`**. The finished app is in `dist\ProductStudio`.
@@ -83,3 +101,7 @@ Your photos are never changed; exports are written as new files.
 - Fonts in `assets/fonts` are under the SIL Open Font License; the licence files are next to them.
 - Built with [PySide6](https://doc.qt.io/qtforpython-6/), [Pillow](https://python-pillow.org/),
   [NumPy](https://numpy.org/) and [ONNX Runtime](https://onnxruntime.ai/).
+
+## License
+
+[MIT](LICENSE). You are free to use, change and share it.
